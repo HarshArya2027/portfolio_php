@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Harsh Arya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">Harsh Arya</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="skills.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Skills</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About</a>
+                    <a href="projects.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Projects</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Home</a></li>
+                <li><a href="skills.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Skills</a></li>
+                <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">About</a></li>
+                <li><a href="projects.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Projects</a></li>
+                <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="project-filter-btn active px-4 py-2 bg-blue-600 text-white rounded-full" data-filter="all">All Projects</button>
+                <button class="project-filter-btn px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full" data-filter="web">Web Development</button>
+                <button class="project-filter-btn px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full" data-filter="cyber">Cybersecurity</button>
+                <button class="project-filter-btn px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-full" data-filter="ai">AI/ML</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 project-container">
+                <!-- Web Development Project 1 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="web">
+                    <img src="assets/images/image.png" alt="E-Commerce Platform" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Secure E-Commerce Platform</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Web</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A full-stack e-commerce website with implemented cybersecurity measures including CSRF protection, SQL injection prevention, and secure payment processing.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">PHP</span>
+                            <span class="px-2 py-1 bg-yellow-200 text-yellow-800 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-red-200 text-red-800 rounded-full text-xs">MySQL</span>
+                            <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-xs">Bootstrap</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity Project 1 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="cyber">
+                    <img src="assets/images/image.png" alt="Vulnerability Scanner" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Network Vulnerability Scanner</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Cybersecurity</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A Python-based tool that scans networks for vulnerabilities, open ports, and potential security threats with detailed reporting functionality.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">Nmap</span>
+                            <span class="px-2 py-1 bg-purple-200 text-purple-800 rounded-full text-xs">Socket</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI/ML Project 1 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="ai">
+                    <img src="assets/images/image.png" alt="Sentiment Analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Sentiment Analysis Tool</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">AI/ML</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Machine learning model that analyzes text sentiment with 85% accuracy, trained on Twitter dataset with NLP preprocessing techniques.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-pink-200 text-pink-800 rounded-full text-xs">NLTK</span>
+                            <span class="px-2 py-1 bg-orange-200 text-orange-800 rounded-full text-xs">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-red-200 text-red-800 rounded-full text-xs">Pandas</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web Development Project 2 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="web">
+                    <img src="assets/images/image.png" alt="Portfolio Template" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Developer Portfolio Template</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Web</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A responsive portfolio template for developers with dark/light mode toggle, project filtering, and contact form with PHP backend.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">HTML5</span>
+                            <span class="px-2 py-1 bg-indigo-200 text-indigo-800 rounded-full text-xs">Tailwind CSS</span>
+                            <span class="px-2 py-1 bg-yellow-200 text-yellow-800 rounded-full text-xs">JavaScript</span>
+                            <span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">PHP</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity Project 2 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="cyber">
+                    <img src="assets/images/image.png" alt="Password Manager" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Encrypted Password Manager</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Cybersecurity</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">A secure local password manager with AES-256 encryption, master password protection, and password strength analyzer.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">Cryptography</span>
+                            <span class="px-2 py-1 bg-yellow-200 text-yellow-800 rounded-full text-xs">Tkinter</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI/ML Project 2 -->
+                <div class="project-item bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300" data-category="ai">
+                    <img src="assets/images/image.png" alt="Fake News Detector" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold text-gray-800">Fake News Detector</h3>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">AI/ML</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">NLP model that classifies news articles as potentially fake or real with 82% accuracy using TF-IDF and logistic regression.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-200 text-blue-800 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-xs">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-red-200 text-red-800 rounded-full text-xs">Pandas</span>
+                            <span class="px-2 py-1 bg-pink-200 text-pink-800 rounded-full text-xs">NLTK</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <a href="#" class="text-blue-600 hover:underline font-medium">View Details</a>
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Modals (hidden by default) -->
+            <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+                <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 id="modalTitle" class="text-2xl font-bold text-gray-800"></h3>
+                            <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <img id="modalImage" src="" alt="" class="w-full h-64 object-cover mb-6 rounded-lg">
+                        <div class="grid md:grid-cols-3 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Project Type</h4>
+                                <p id="modalType" class="text-gray-600"></p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Technologies</h4>
+                                <div id="modalTech" class="flex flex-wrap gap-2"></div>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 mb-2">Project Date</h4>
+                                <p id="modalDate" class="text-gray-600"></p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Description</h4>
+                            <p id="modalDescription" class="text-gray-600"></p>
+                        </div>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-gray-800 mb-2">Key Features</h4>
+                            <ul id="modalFeatures" class="list-disc pl-5 text-gray-600 space-y-2"></ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <a id="modalGithub" href="#" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fab fa-github mr-2"></i> View on GitHub
+                            </a>
+                            <a id="modalLive" href="#" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center">
+                                <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-semibold">Harsh Arya</h2>
+                    <p class="text-gray-400">Engineering Student & Tech Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/harsharya" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/harsharya" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://twitter.com/harsharya" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="mailto:harsharya@example.com" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fas fa-envelope fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
+                <p>&copy; 2023 Harsh Arya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.project-filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            
+            // Filter projects
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active', 'bg-blue-600', 'text-white'));
+                    this.classList.add('active', 'bg-blue-600', 'text-white');
+                    this.classList.remove('bg-gray-200', 'hover:bg-gray-300');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    projectItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            item.classList.add('fade-in');
+                        } else {
+                            item.style.display = 'none';
+                            item.classList.remove('fade-in');
+                        }
+                    });
+                });
+            });
+            
+            // Project modal functionality
+            const projectModal = document.getElementById('projectModal');
+            const closeModal = document.getElementById('closeModal');
+            
+            // Sample project data (in a real scenario, this might come from a database)
+            const projectsData = {
+                'secure-ecommerce': {
+                    title: 'Secure E-Commerce Platform',
+                    type: 'Web Development',
+                    image: 'assets/images/ecommerce-project.jpg',
+                    date: 'June 2023',
+                    description: 'A full-stack e-commerce platform with implemented cybersecurity measures including CSRF protection, SQL injection prevention, and secure payment processing. The platform features user authentication, product catalog, shopping cart, and order management system.',
+                    features: [
+                        'Implemented CSRF tokens for all form submissions',
+                        'Used prepared statements to prevent SQL injection',
+                        'Integrated Stripe API for secure payments',
+                        'Developed admin dashboard for product management',
+                        'Created responsive design with Bootstrap 5'
+                    ],
+                    technologies: ['PHP', 'JavaScript', 'MySQL', 'Bootstrap'],
+                    github: '#',
+                    live: '#'
+                },
+                'vulnerability-scanner': {
+                    title: 'Network Vulnerability Scanner',
+                    type: 'Cybersecurity',
+                    image: 'assets/images/vulnerability-scanner.jpg',
+                    date: 'March 2023',
+                    description: 'A Python-based tool that scans networks for vulnerabilities, open ports, and potential security threats with detailed reporting functionality. The scanner can identify common vulnerabilities and provide recommendations for mitigation.',
+                    features: [
+                        'Scans for open ports and services',
+                        'Identifies common vulnerabilities (CVE database)',
+                        'Generates detailed PDF reports',
+                        'Provides security recommendations',
+                        'Command-line interface with color-coded results'
+                    ],
+                    technologies: ['Python', 'Nmap', 'Socket'],
+                    github: '#',
+                    live: '#'
+                },
+                // Add data for other projects similarly
+            };
+            
+            // Open modal when "View Details" is clicked
+            document.querySelectorAll('.project-item a[href="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const projectId = this.closest('.project-item').getAttribute('data-id') || 
+                                    this.closest('.project-item').querySelector('h3').textContent.toLowerCase().replace(/\s+/g, '-');
+                    
+                    const project = projectsData[projectId] || {
+                        title: this.closest('.project-item').querySelector('h3').textContent,
+                        type: this.closest('.project-item').querySelector('span').textContent,
+                        image: this.closest('.project-item').querySelector('img').src,
+                        date: '2023',
+                        description: this.closest('.project-item').querySelector('p').textContent,
+                        features: ['Feature 1', 'Feature 2', 'Feature 3'],
+                        technologies: Array.from(this.closest('.project-item').querySelectorAll('.flex-wrap span')).map(span => span.textContent),
+                        github: '#',
+                        live: '#'
+                    };
+                    
+                    // Populate modal
+                    document.getElementById('modalTitle').textContent = project.title;
+                    document.getElementById('modalImage').src = project.image;
+                    document.getElementById('modalImage').alt = project.title;
+                    document.getElementById('modalType').textContent = project.type;
+                    document.getElementById('modalDate').textContent = project.date;
+                    document.getElementById('modalDescription').textContent = project.description;
+                    
+                    const featuresList = document.getElementById('modalFeatures');
+                    featuresList.innerHTML = '';
+                    project.features.forEach(feature => {
+                        const li = document.createElement('li');
+                        li.textContent = feature;
+                        featuresList.appendChild(li);
+                    });
+                    
+                    const techContainer = document.getElementById('modalTech');
+                    techContainer.innerHTML = '';
+                    project.technologies.forEach(tech => {
+                        const span = document.createElement('span');
+                        span.className = 'px-2 py-1 bg-gray-200 text-gray-800 rounded-full text-xs';
+                        span.textContent = tech;
+                        techContainer.appendChild(span);
+                    });
+                    
+                    document.getElementById('modalGithub').href = project.github;
+                    document.getElementById('modalLive').href = project.live;
+                    
+                    // Show modal
+                    projectModal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                projectModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            });
+            
+            // Close modal when clicking outside
+            projectModal.addEventListener('click', function(e) {
+                if (e.target === projectModal) {
+                    projectModal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
